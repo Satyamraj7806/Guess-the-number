@@ -26,3 +26,6 @@ int main() {
     playGame();
     return 0;
 }
+
+![image](https://github.com/user-attachments/assets/33926386-cb70-413d-bab2-6d1367ecef38)
+
