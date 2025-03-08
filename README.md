@@ -1,31 +1,34 @@
-# Guess-the-number
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+Number Guessing Game
 
-void playGame() {
-    int number, guess, attempts = 0;
-    srand(time(0));
-    number = rand() % 100 + 1;
-    printf("Welcome to the Guess The Number ame!\n");
-    printf("I have chosen a number between 1 and 100. Can you guess it?\n\n");    
-    do {
-        printf("Enter your guess: ");
-        scanf("%d", &guess);
-        attempts++;      
-        if (guess > number)
-            printf("Too high, Try again.\n");
-        else if (guess < number)
-            printf("Too low,try again.\n");
-        else
-            printf("Congratulations! You guessed the number in %d attempts.\n", attempts);   
-    } while (guess != number);
-}
+🎯 About the Project
 
-int main() {
-    playGame();
-    return 0;
-}
+This is a simple Number Guessing Game written in C. The program generates a random number within a specified range, and the player has to guess the number correctly within a limited number of attempts. The game provides hints to help the player make the right guess.
+
+🚀 Features
+
+Generates a random number within a given range.
+
+Allows user input for guessing.
+
+Provides hints if the guess is too high or too low.
+
+Limits the number of attempts to increase difficulty.
+
+Displays the number of attempts taken to win.
+
+Option to play again after completion.
+
+🛠️ Technologies Used
+
+C Programming Language
+
+Standard Library Functions (rand(), srand(), time())
+
+Loops and Conditional Statements
+
+🏆 Contributing
+
+Feel free to fork this repository and contribute by adding new features or improving the existing code. Pull requests are welcome!
 
 ![image](https://github.com/user-attachments/assets/33926386-cb70-413d-bab2-6d1367ecef38)
 
